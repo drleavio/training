@@ -38,7 +38,7 @@ const TableData = () => {
     const handlechange=(e)=>{
     setValue(e.target.value)
        data.map((val)=>{
-        if(option==='name' && val.name.toLocaleLowerCase().includes(value)){
+        if(option==='name' && val.name.toLowerCase().includes(value)){
             console.log(val);
            setSearch(val)
         }if(option==='rollno' && val.rollno.toString().includes(value)){
